@@ -11,19 +11,20 @@
     <title>Document</title>
 </head>
 <body>
-    <nav id="nav-bar">
-        <div>
-            <img src="icons8-téléphone-raccroché-100.png" alt="">
-            <p>MICROVERSE PHONE</p>
-        </div>
-        <div>
-            <a href="#header">How It Work</a>
-            <a href="#features">Features</a>
-            <a href="#comments">Comments</a>
-        </div>
-    </nav>
+    
     <header id="header">
-        <div>
+        <nav id="nav-bar">
+            <div>
+                <img id="header-img" src="icons8-téléphone-raccroché-100.png" alt="">
+                <p>MICROVERSE PHONE</p>
+            </div>
+            <div>
+                <a class="nav-link" href="#header">How It Work</a>
+                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#comments">Comments</a>
+            </div>
+        </nav>
+        <main>
             <h2>Need a New Phone ?</h2>
             <p>Lorem ipsum dolor sit amet, 
                 consectetur adipisicing elit,
@@ -35,10 +36,10 @@
                  Duis aute irure dolor in reprehenderit in voluptat</p>
 
                  <input type="button" value="More Info Here">
-        </div>
-    <div id="video">
-        <iframe 
-        src="https://www.youtube.com/embed/tgbNymZ7vqY">How it works
+            </main>
+    <div id="videos">
+        <iframe id="video"
+        src="https://www.youtube.com/embed/BiYRaxKPnFY">How it works
         </iframe> 
     </div>
     </header>
@@ -68,10 +69,10 @@
 
     <section id="comments">
         <h1>Leave Comments</h1>
-        <form action="text">
-            <input id="email" type="email" placeholder="Email address">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" name= "email" type="email" placeholder="Email address">
             <textarea id="comment" type="text" placeholder="Write a comments here"></textarea>
-            <button type="submit">SEND</button>
+            <input id="submit" type="submit" value="SEND" />
         </form>
     </section>
     

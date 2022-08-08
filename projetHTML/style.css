@@ -25,7 +25,7 @@ body{
     cursor: pointer;
 }
 #nav-bar a {
-    padding: 15px 20px 10px 20px;
+    padding: 20px 20px 10px 20px;
     margin-right: 20px;
     text-decoration: none;
     color: white;
@@ -43,12 +43,13 @@ body{
     color: white;
     display: flex;
 }
-#header div{
+#header main, iframe{
     width: 50%;
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 40px;
     padding-left: 50px;
     padding-right: 10px;
+    border: none;
 
 }
 
@@ -79,7 +80,7 @@ body{
     color: #E63946;
     transition-duration: 300ms;
 }
-#video{
+#videos{
     display: flex;
     justify-content: center;
 }
@@ -130,7 +131,7 @@ iframe{
     align-items: center;
     
 }
-#comments form input,textarea {
+#comments form input[type="email"],textarea {
     width: 400px;
     border: none;
 }
@@ -142,7 +143,7 @@ iframe{
     height: 180px;
     margin-top: 15px;
 }
-#comments button{
+#comments input[type="submit"]{
     margin-top: 15px;
     padding: 10px 30px 10px 30px;
     font-weight: 500;
@@ -151,7 +152,7 @@ iframe{
     border: none;
     
 }
-#comments button:hover {
+#comments input[type="submit"]:hover {
     background-color: white;
     color: #E63946;
     transition-duration: 300ms;
@@ -173,4 +174,11 @@ footer a{
 footer a:hover{
     color: #E63946;
     transition-duration: 300ms;
+}
+
+@media (max-width: 650px){
+    #header{
+        display: flex;
+        flex-direction: column;
+    }
 }
